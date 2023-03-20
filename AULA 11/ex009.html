@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+       
+        body{
+            font-family: Arial, Helvetica, sans-serif;  
+            background-color: beige; 
+            color: maroon;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        p{
+            text-align: center;
+            font-size: 1.5em;
+        }
+
+        input{
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            margin: auto;
+        }
+
+        input#txtpais{
+            width: 200px;
+            height: 30px;
+        }
+
+        input#ver{
+            height: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Em que país vc nasceu?</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input id="ver" type="button" value="Registrar" onclick="verificar()">
+    <div id="res"></div>
+    <script>
+        function verificar(){
+            var txtp = window.document.getElementById('txtpais')
+            var res = window.document.querySelector('div#res')
+            var pais = (txtp.value)
+
+            if(pais=='Brasil','brasil','br','Br'){
+                res.innerHTML = `<p>Você é <strong>brasileiro</strong>!</p>`
+            }
+            else {
+                res.innerHTML =`<p>Você é <strong>estrangeiro</strong>!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
