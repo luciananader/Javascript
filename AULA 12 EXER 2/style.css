@@ -1,0 +1,65 @@
+@chaset "UTF-8";
+Body{
+    background-color: cadetblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+section{
+    display: block;
+    width: 500px;
+    height: 370px;
+    background-color: darkslategrey;
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.397);
+    color: white;
+}
+
+div#ano{
+    padding-bottom: 10px;
+}
+
+input#txtano{
+    margin-left: 15px;
+    font-size: 1.3em;
+}
+
+input#feminino{
+    margin: 10px;
+}
+
+input#masculino{
+    margin: 10px;
+}
+
+input#verificar{
+    margin-top: 10px;
+}
+
+div#texto{
+    padding: 10px;
+}
+
+img#imagem{
+    display: block;
+    width:180px;
+    height: 180px;
+    margin: auto;
+    border-radius: 50%;  
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+}
