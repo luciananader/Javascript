@@ -9,7 +9,8 @@ function verificar(){
         var sexo = document.getElementsByName('radio')
         var idade = ano - Number(fano.value)
         var genero =''
-        var img = document.getElementById('imagem')
+        var img = document.createElement('img')
+        img.setAttribute('id', 'imagem')
             if (sexo[0].checked){
             genero = 'Mulher'
                 if(idade<13){
