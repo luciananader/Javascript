@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body{
-background-color: cadetblue;
+background-color:cadetblue;
 font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,24 +21,25 @@ header>h1{
     color: white;
 }
 
-div#texto{
-    color: cadetblue;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
+div{
+    display: block;
 }
 
-div#imagem{
+div#msg{
+    font-size: 1.5em;
+    color: rgba(0, 0, 0, 0.767);
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+}
+
+img#imagem{
     display: block;
-    width: 50px;
-    height: 50px;
-    background-color: cadetblue;
-    color: white;
+    width: 250px;
+    height:250px;
     margin: auto;
     border-radius: 50%;
-    margin-top: 50px;
-    bo
-
+    margin-top: 20px;
 }
 
 footer{
