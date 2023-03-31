@@ -1,6 +1,20 @@
 function verificar(){
+    var meses = new Array('jan','fev', 'mar','abr','mai','jun','jul','ago','set','out','nov','dez')
+    var semana = new Array('dom','seg','ter','qua','qui','sex', 'sab')
     var agora = new Date
-    var hora = agora.getHours
+    var dia = agora.getDate()
+    var mes = agora.getMonth()
+    var ano = agora.getFullYear()
+    var sem = agora.getDay()
+    var hora = agora.getHours()
+    var min = agora.getMinutes()
+    var seg = agora.getSeconds()
     var res = document.getElementById('result')
-    res.innerHTML = (`O que recebi no sistema foi <mark>${agora}</mark>`)
+    res.innerHTML = (`<p>Dia: <mark>${dia}</mark></p>`)
+    res.innerHTML += (`<p>Mês: <mark>${meses[mes]}</mark></p>`)
+    res.innerHTML += (`<p>Ano: <mark>${ano}</mark></p>`)
+    res.innerHTML += (`<p>Dia da semana: <mark>${semana[sem]}</mark></p>`)
+    res.innerHTML += (`<p>Hora: <mark>${hora}</mark></p>`)
+    res.innerHTML += (`<p>Minutos: <mark>${min}</mark></p>`)
+    res.innerHTML += (`<p>Segundos: <mark>${seg}</mark></p>`)
 }
